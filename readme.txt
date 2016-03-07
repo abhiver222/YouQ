@@ -11,4 +11,4 @@ We're really proud to have managed OAuth integration in our app, despite the cha
 ## What we learned
 We learnt how chrome extensions work, and how useful it is to understand the vulnerabilities in making such extensions. It was also our first shot at OAuth2.0 and learning Angular. Overall, it was a very intensive learning project!
 ## What's next for YouQ
-With a little more time, we can provide floating YouTube videos that the user can see from any application. Interactive queue management is another possibility.
+We are working on providing a floating YouTube viewer so that that the user can see from any application. Interactive queue management is another possibility.
