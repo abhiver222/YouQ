@@ -1,0 +1,38 @@
+[
+  {
+    
+    "kind": "youtube#playlistItem",
+    "etag": "",
+    "id": "",
+    "snippet": {
+      "publishedAt": "",
+      "channelId": "",
+      "title": "David Guetta - Hey Nanana (Official Video) ft Nicki Minaj, Bebe Rexha & Afrojack",
+      "description": "sample",
+      "thumbnails": {
+        "default": {
+          "url": "https://i.ytimg.com/vi/uO59tfQ2TbA/default.jpg",
+          "width": 80,
+          "height": 60
+        }
+      },
+      "channelTitle": "",
+      "playlistId": "",
+      "position": 0,
+      "resourceId": {
+        "kind": "",
+        "videoId": ""
+      }
+    },
+    "contentDetails": {
+      "videoId": "",
+      "startAt": "",
+      "endAt": "",
+      "note": ""
+    },
+    "status": {
+      "privacyStatus": ""
+    }
+    
+  }
+]

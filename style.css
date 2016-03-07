@@ -1,0 +1,10 @@
+#search_button {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: -22px;
+  top: 3px;
+
+  background-image: "search_button_image";  /* Replace with your own image */
+}

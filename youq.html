@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>YouQ</title>
+    <script src="js/youq.js"></script>
+    <script src="js/backend.js"></script>
+    <script src="js/angular.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/searchpage.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/youq.css">
+    <script src="js/controller.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 align="center" class="heading"> YouQ </h1>
+    <section ng-app  >
+    <form name="myform" action="main.html"
+      novalidate>
+
+        <button ng-model="loggedin" type="submit" class="btn btn-info" align="center" style="margin-left:40%" id="loginButton" ng-click="login()">Q</button>
+      </form>
+    </section>
+  </body>
+</html>

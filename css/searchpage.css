@@ -1,0 +1,202 @@
+.searchBox{
+  width:94%;
+  margin-left: 5%;
+  border-top-left-radius:5px; 
+  border-bottom-left-radius:5px; 
+  padding-left:8px;
+}
+
+body{
+  width:300px;
+  max-height: 400px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+.info{
+  margin-top: 10px;
+  
+    float: left;
+    padding-left: 2px !important;
+}
+
+.maininfo p{
+  word-wrap:break-word;
+  word-break: break-all;
+  /*height:100px;
+  margin-right: 10px;
+  margin-left: 10px;*/
+}
+
+.vidName{
+  font-size: 78%;
+  display: inline-block;
+  width: 100%;
+}
+
+.vidImg{
+  display: inline-block;
+  width:100%;
+  height:100%;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.vidDiv{
+  display: inline;
+  word-wrap:break-word;
+}
+
+.searchBox{
+  display: inline;
+  float: left;
+  width: 60%;
+  margin-left: 12%;
+}
+
+.searchButton{
+
+  display: inline;
+  float: left;
+  border-top-left-radius:0px; 
+  border-bottom-left-radius:0px; 
+}
+
+.search{
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height:50px;
+  margin-left: -10px;
+  margin-top: 5px;
+}
+
+.flex-container-search {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 100%;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.searchlist{
+  margin-top: 20px;
+}
+
+.listElem{
+  /*border: 1px solid;*/
+}
+
+.btn-wid{
+  height:25px;
+  position: relative;
+  margin-left: 5px;
+  flex-direction:row;
+  align-self:baseline;
+}
+
+.play{
+	height: 25px;
+	margin-left: 44%;
+	margin-top: 10px;
+}
+
+.center-class{
+  margin-left: 30%;
+}
+
+.formDisplay{
+  margin-top: 10px;
+}
+
+.video{
+  height:40%;
+}
+
+#search_button {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: -22px;
+  top: 3px;
+
+  background-image: "search_button_image";  /* Replace with your own image */
+}
+html{
+  width:300px;
+}
+
+.loginbtn{
+  position: center;
+  
+}
+
+#addVid{
+  position: relative;
+  float:right;
+  margin-right:3%;
+}
+
+#navers{
+  margin-left: 28%;
+}
+
+.listElem{
+  margin-top: 10px;
+}
+
+@font-face{
+  font-family: "revolution";
+  src: url("REVOLUTION.ttf");
+}
+
+.heading{
+  font-family : revolution;
+  color: #01579B
+}
+
+.imageWrap{
+  width: 30%;
+  height: 20%;
+  min-height: 40px;
+  min-width: 60px;
+  max-height: 40px;
+  max-width: 60px;
+}
+
+.name{
+  width: 60%;
+}

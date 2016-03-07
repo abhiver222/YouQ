@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "YouQ",
+  "description": "A on-the-go playlist creator for YouTube",
+  "version": "1.0", 
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "youq.html"
+   },  
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtmDborz2HdOTLegp6YlwAQQs+69rN0+XP7Pc2AMOcnofN3uO1QJanGy7Gfh99qijKaL7CEXyt/peZkG11OwdeI6HzK4OmEB+gEyX3hy3yFWLjeQ7pJ5GQGl2XYPaXDCQ7+e6xNWgPzDsv9kxvhLkc7+rXMqIBMB0sni5j/56tJelbS+beP0CDlenzwrKxE8Fu3KgqdkZGzBXVOFnlvTsdeRq+8d3trW2CRzJbDYWMjEqiPmOmLbWYXzfNa4i5l9o69X8Vr94PgxW2CVMVq55G44+hu9DWaFLUHqXehgbnTaVc2ffAjYiVnREO7vkzj5X6aya0lcMwN7I4XhDLCOuZQIDAQAB",
+  "content_security_policy": "script-src 'self' https://apis.google.com/; object-src 'self'",
+  "permissions": [
+  "identity",
+  "activeTab",
+  "tabs",
+  "https://*.google.com/"
+   ],
+   "oauth2": {
+    "client_id": "346168684656-lfrkicok8l3h7mjj8jd95l03firni00r.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/urlshortener",
+      "https://www.googleapis.com/auth/youtube",
+      "https://www.googleapis.com/auth/youtube.readonly",
+      "https://www.googleapis.com/auth/youtube.upload",
+      "https://www.googleapis.com/auth/youtubepartner"
+    ]
+    },
+  "content_scripts": [{
+  "matches": ["https://www.google.com/*, https://*/*", "https://*/*/*"],
+  "css": ["css/searchpage.css","css/youq.css"],
+  "js": ["js/backend.js", "js/jquery.js"]
+  }]
+}

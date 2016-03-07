@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+
+    <script src="js/angular.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+    <!-- Custom CSS -->
+    <link href="css/searchpage.css" rel="stylesheet">
+    
+
+
+    <script src="js/controller.js"></script>
+    <script src="js/youq.js"></script>
+    <script src="js/backend.js"></script>
+
+</head>
+
+<body>
+    <h2 align="center" class="heading"> YouQ </h1>
+
+      <div class="container">
+        <section ng-controller="MyController as tab">
+            <!-- <ul class="nav nav-pills center-class">
+                <li ng-class="{active:tab.isSet(1)}"><a href ng-click="tab.setTab(1)">Search</a></li>
+                <li ng-class="{active:tab.isSet(2)}"><a href ng-click="tab.setTab(2)">Playlist</a></li>                
+            </ul>  -->           
+            <div class="btn-group btn-group-sm" id="navers" role="group" aria-label="...">
+              <button ng-class="{active:tab.isSet(1)}" type="button" class="btn btn-info" ng-click="tab.setTab(1)">Search</button>
+              <button ng-class="{active:tab.isSet(2)}" type="button" class="btn btn-info" ng-click="tab.setTab(2)">Playlist</button>
+            </div>
+            <div ng-show="tab.isSet(1)">
+                 <div class="formDisplay">
+                   <div class="search">
+                     <form class="searchForm flex-container-search">
+                        <input type="text" class="searchBox" placeholder=" Search to Q" name="query" id="queryForm" ng-model="query" autofocus>
+                      <br/>
+                      <input type="button" ng-click="getData()" value="search" class="searchButton btn btn-info btn-sm"/>
+                     </form>
+                    </div>
+                 </div>
+                 
+                 <ul class="searchlist">
+                    <li class="listElem  flex-container" ng-repeat="item in results">
+                      <!-- <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}"> -->
+
+                        <div class="maininfo flex-container">
+                          <div class="imageWrap">
+                            <img class="vidImg" src="{{item.snippet.thumbnails.default.url}}">  
+                          </div>
+                          <div class="name container">
+                            <p class="vidName">{{item.snippet.title}}</p>    
+                          </div>
+                          <button type="button" class="btn btn-default btn-xs btn-wid" aria-label="Left Align" id="addVid" ng-click="addVid(item.id.videoId)" style="float:right;">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>          
+                          </button>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+
+            <div ng-show="tab.isSet(2)">
+
+                 <button type="button" class="btn btn-success btn-sm play" aria-label="Left Align" ng-click="jumpToYoutube()" align="center">
+                      <span class="glyphicon glyphicon-play" aria-hidden="true"></span>          
+                  </button>
+
+                 <ul class="searchlist">              
+                    <li class="listElem flex-container" ng-repeat="vid in playlist">
+                        <div class="maininfo flex-container">
+                          <div class="imageWrap">                      
+                            <img class="vidImg" src="{{vid.snippet.thumbnails.default.url}}">  
+                          </div>
+                          <div class="name container">  
+                            <p class="vidName">{{vid.snippet.title}}</p>    
+                          </div>
+                          <button type="button" class="btn btn-default btn-xs btn-wid" aria-label="Left Align" ng-click="removeVid(vid.id)">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>          
+                          </button>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </section>
+      </div>
+      
+    </div><!-- all elements -->
+    
+
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

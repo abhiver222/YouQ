@@ -1,0 +1,32 @@
+#search_button {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: -22px;
+  top: 3px;
+
+  background-image: "search_button_image";  /* Replace with your own image */
+}
+
+body{
+	width:200px;
+}
+html{
+	width:200px;
+}
+
+.loginbtn{
+	position: center;
+	margin-bottom: 8px;
+}
+
+@font-face{
+  font-family: "revolution";
+  src: url("REVOLUTION.ttf");
+}
+
+.heading{
+  font-family:revolution;
+  color: #01579B
+}
